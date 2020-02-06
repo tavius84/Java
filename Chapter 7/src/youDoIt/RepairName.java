@@ -1,11 +1,12 @@
 package youDoIt;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class RepairName {
     public static void main(String[] args){
     String name;
-    String saveOrginalname;
+    String saveOriginalName;
     int stringLength;
     char c;
 
@@ -14,7 +15,7 @@ public class RepairName {
     System.out.print("Please enter your first name >> ");
     name = input.nextLine();
 
-    saveOrginalname = name;
+    saveOriginalName = name;
 
     stringLength = name.length();
 
@@ -35,5 +36,7 @@ public class RepairName {
             }
 
     }
+        JOptionPane.showMessageDialog(null, "Original name was " +
+        saveOriginalName + "\nRepaired name is " + name);
     }
 }
